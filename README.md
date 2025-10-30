@@ -14,3 +14,23 @@ GraalPy brings **modern Python 3.11** to the JVM. It can run Python code with Gr
 - Embed Python into a Java application.
 - Call Java types from Python scripts (and interop with other Graal languages).
 - Build native executables that bundle your Python code and all dependencies.
+
+# Embedding languages in Java
+
+The GraalVM Polyglot API lets you embed and run guest languages (like JavaScript, Python, Ruby, or R) inside Java applications.
+
+Let's see how you can set up dependencies, compile and run a polyglot app, and exchange values between Java and guest languages.
+
+You can get everything from Maven Central.
+
+Add the following to your pom.xml:
+
+```xml
+<dependency>
+	<groupId>org.graalvm.polyglot</groupId>
+	<!-- Select a language: js, ruby, python, java, llvm, wasm, languages-->
+	<artifactId>js</artifactId>
+	<version>${graalvm.polyglot.version}</version>
+	<type>pom</type>
+</dependency>
+```
