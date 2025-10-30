@@ -29,8 +29,9 @@ Add the following to your pom.xml:
 <dependency>
 	<groupId>org.graalvm.polyglot</groupId>
 	<!-- Select a language: js, ruby, python, java, llvm, wasm, languages-->
-	<artifactId>js</artifactId>
-	<version>${graalvm.polyglot.version}</version>
+	<artifactId>python</artifactId>
+	<version>25.0.0</version>
 	<type>pom</type>
 </dependency>
 ```
+Note tha language and tool dependencies have to be of a type `pom`. All our language artifacts are open-source licensed.
